@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <transition name="flip" mode="out-in">
-      <component :is="mode" @answered="answered(flip)" @confirmed="mode = 'app-enter'"></component>
+      <component :is="mode"></component>
     </transition>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
   name: 'home',
   data () {
     return {
-      mode: 'app-enter'
+      mode: 'app-slider'
     }
   },
   computed: {
@@ -24,9 +24,13 @@ export default {
       'flip'
     ])
   },
+  created () {
+    this.entered(this.flip)
+  },
   methods: {
-    entered (isCorrect) {
-      if (isCorrect) {
+    entered (flip) {
+      console.log(flip)
+      if (flip) {
         this.mode = 'app-slider'
       } else {
         this.mode = 'app-enter'
@@ -36,6 +40,11 @@ export default {
   components: {
     'app-enter': Enter,
     'app-slider': Slider
+  },
+  watch: {
+    flip: function () {
+      this.entered(this.flip)
+    }
   }
 }
 </script>
@@ -43,10 +52,25 @@ export default {
 <style lang="sass">
 .flip-enter,
 .flip-enter-active
-  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+  animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 
 .flip-leave,
 .flip-leave-active
-  animation-name: fadeOutLeft
-  animation-duration: 0.3s
+  animation: flip-out-ver-left 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+@keyframes flip-out-ver-left
+  0%
+    transform: rotateY(0)
+    opacity: 1
+  100%
+    transform: rotateY(-70deg)
+    opacity: 0
+
+@keyframes flip-in-ver-left
+  0%
+    transform: rotateY(80deg)
+    opacity: 0
+  100%
+    transform: rotateY(0)
+    opacity: 1
 </style>

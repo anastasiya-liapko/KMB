@@ -3,14 +3,14 @@ const state = {
 }
 
 const mutations = {
-  'FLIP' () {
+  'SWITCH_FLIP' () {
     state.flip = !state.flip
   }
 }
 
 const actions = {
-  flip: ({ commit }) => {
-    commit('FLIP')
+  switchFlip: ({ commit }) => {
+    commit('SWITCH_FLIP')
   }
 }
 

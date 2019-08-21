@@ -1,19 +1,26 @@
 <template>
   <div class="enter">
-    <button>Войти</button>
+    <button @click="switchFlip">Войти</button>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  name: 'enter'
+  name: 'enter',
+  methods: {
+    ...mapActions([
+      'switchFlip'
+    ])
+  }
 }
 </script>
 
 <style lang="sass">
 .enter
   width: 100vw
-  height: 100vw
+  height: 100vh
   background-color: green
   button
     width: 200px
