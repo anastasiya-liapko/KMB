@@ -10,6 +10,8 @@
 // @ is an alias to /src
 import Enter from '@/components/Enter.vue'
 import Slider from '@/components/Slider.vue'
+// import Post from '@/components/Post.vue'
+// import Contacts from '@/components/Contacts.vue'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -29,7 +31,6 @@ export default {
   },
   methods: {
     entered (flip) {
-      console.log(flip)
       if (flip) {
         this.mode = 'app-slider'
       } else {
@@ -40,6 +41,8 @@ export default {
   components: {
     'app-enter': Enter,
     'app-slider': Slider
+    // 'app-post': Post,
+    // 'app-contacts': Contacts
   },
   watch: {
     flip: function () {

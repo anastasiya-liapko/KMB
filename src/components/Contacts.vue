@@ -1,7 +1,7 @@
 <template>
-  <div class="enter">
-    <button @click="switchFlip">Войти</button>
-    <div class="triangle triangle-bottom"></div>
+  <div class="contacts">
+    <button @click="changeMode('')">Назад</button>
+    <!-- <div class="triangle triangle-top"></div> -->
   </div>
 </template>
 
@@ -9,26 +9,24 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'enter',
+  name: 'contacts',
   methods: {
     ...mapActions([
-      'switchFlip'
-      // 'changeMode'
+      'changeMode'
     ])
   }
 }
 </script>
 
 <style lang="sass">
-.enter
+.contacts
   position: relative
   width: 100vw
   height: 100vh
-  background-color: red
+  background-color: lightblue
   button
     width: 200px
     height: 50px
     color: white
     background-color: blue
-    font-family: inherit
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="enter">
+  <div class="slide-1">
     <button @click="switchFlip">Войти</button>
     <div class="triangle triangle-bottom"></div>
   </div>
@@ -9,7 +9,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'enter',
+  name: 'slide-1',
   methods: {
     ...mapActions([
       'switchFlip'
@@ -20,15 +20,14 @@ export default {
 </script>
 
 <style lang="sass">
-.enter
+.slide-1
   position: relative
   width: 100vw
   height: 100vh
-  background-color: red
+  background-color: pink
   button
     width: 200px
     height: 50px
     color: white
     background-color: blue
-    font-family: inherit
 </style>

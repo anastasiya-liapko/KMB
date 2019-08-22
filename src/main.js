@@ -4,6 +4,9 @@ import router from './router'
 import store from './store/store'
 import './registerServiceWorker'
 
+// npm install --save jquery
+// npm install vue-slick
+
 Vue.config.productionTip = false
 
 new Vue({
