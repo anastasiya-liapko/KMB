@@ -1,6 +1,16 @@
 <template>
   <div class="slide-2">
+    <div class="slide-2__content content">
+      <button>test</button>
+    </div>
 
+    <transition name="slide-bl">
+      <div class="triangle-gray"></div>
+    </transition>
+
+    <transition name="slide-bl">
+      <div class="rect-green"></div>
+    </transition>
   </div>
 </template>
 

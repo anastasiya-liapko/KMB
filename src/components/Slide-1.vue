@@ -1,7 +1,18 @@
 <template>
   <div class="slide-1">
-    <button @click="switchFlip">Войти</button>
-    <div class="triangle triangle-bottom"></div>
+    <div class="slide-1__wrapper">
+      <div class="slide-1__content content">
+        <button @click="switchFlip">Войти</button>
+      </div>
+
+      <transition name="slide-bl" appear>
+        <div class="rect-gray"></div>
+      </transition>
+
+      <transition name="slide-br" appear>
+        <div class="triangle triangle-bottom"></div>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -30,4 +41,9 @@ export default {
     height: 50px
     color: white
     background-color: blue
+
+.slide-1__wrapper
+  position: relative
+  width: inherit
+  height: inherit
 </style>

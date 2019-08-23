@@ -39,6 +39,13 @@ body
 //   100%
 //     opacity: 1
 
+.content
+  z-index: 10
+  position: relative
+  width: inherit
+  height: inherit
+  background-color: transparent
+
 .triangle
   z-index: 100
   position: absolute
@@ -57,6 +64,43 @@ body
   top: 0
   background-image: url('assets/img/triangle-right-top.png')
 
+.rect-gray
+  z-index: 1
+  position: absolute
+  left: 0
+  top: 0
+  width: 70%
+  height: 100%
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  background-image: url('assets/img/rect-gray.svg')
+
+.triangle-gray
+  z-index: 1
+  position: absolute
+  left: 0
+  top: 0
+  width: 65%
+  height: 100%
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  background-image: url('assets/img/triangle-gray.svg')
+
+.rect-green
+  z-index: 1
+  position: absolute
+  // left: 53px
+  bottom: 0
+  width: 309px
+  height: 410px
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  background-image: url('assets/img/rect-green.svg')
+  border: 1px solid red
+
 // modal
 .modal-mask
   position: fixed
@@ -71,6 +115,7 @@ body
 .modal-wrapper
   display: table-cell
   vertical-align: middle
+.popup,
 .modal-container
   // width: 493px
   // height: 447px
@@ -111,10 +156,92 @@ body
     opacity: 0
   100%
     opacity: 1
-
 @keyframes fade-out
   0%
     opacity: 1
   100%
+    opacity: 0
+
+.slide-bl-enter,
+.slide-bl-enter-active
+  animation: slide-in-bl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+.slide-bl-leave,
+.slide-bl-leave-active
+  animation: slide-out-bl 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+@keyframes slide-in-bl
+  0%
+    transform: translateY(1000px) translateX(-1000px)
+    opacity: 0
+  100%
+    transform: translateY(0) translateX(0)
+    opacity: 1
+@keyframes slide-out-bl
+  0%
+    transform: translateY(0) translateX(0)
+    opacity: 1
+  100%
+    transform: translateY(1000px) translateX(-1000px)
+    opacity: 0
+
+.slide-br-enter,
+.slide-br-enter-active
+  animation: slide-in-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+.slide-br-leave,
+.slide-br-leave-active
+  animation: slide-out-br 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+@keyframes slide-in-br
+  0%
+    transform: translateY(1000px) translateX(1000px)
+    opacity: 0
+  100%
+    transform: translateY(0) translateX(0)
+    opacity: 1
+@keyframes slide-out-br
+  0%
+    transform: translateY(0) translateX(0)
+    opacity: 1
+  100%
+    transform: translateY(1000px) translateX(1000px)
+    opacity: 0
+
+.slide-l1-enter,
+.slide-l1-enter-active
+  animation: slide-in-l 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+.slide-l1-leave,
+.slide-l1-leave-active
+  animation: slide-out-l 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.4s both
+
+.slide-l2-enter,
+.slide-l2-enter-active
+  animation: slide-in-l 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both
+.slide-l2-leave,
+.slide-l2-leave-active
+  animation: slide-out-l 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s both
+
+.slide-l3-enter,
+.slide-l3-enter-active
+  animation: slide-in-l 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both
+.slide-l3-leave,
+.slide-l3-leave-active
+  animation: slide-out-l 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+@keyframes slide-in-l
+  0%
+    transform: translateX(-200px)
+    opacity: 0
+  100%
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes slide-out-l
+  0%
+    transform: translateX(0)
+    opacity: 1
+  100%
+    transform: translateX(-200px)
     opacity: 0
 </style>

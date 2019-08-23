@@ -2,7 +2,7 @@
   <transition name="modal" appear>
     <div class="modal-mask">
       <div class="modal-wrapper">
-        <div :id="id" class="modal-container">
+        <div :id="id" class="modal-container popup">
 
           <div class="modal-header">
             <slot name="header">
