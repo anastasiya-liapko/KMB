@@ -74,26 +74,26 @@ export default {
 .flip-leave-active .triangle-bottom
   animation: slide-out-br 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
 
-.flip-enter .transition-elem-1,
-.flip-enter-active .transition-elem-1
-  animation: slide-in-l 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
-.flip-leave .transition-elem-1,
-.flip-leave-active .transition-elem-1
-  animation: slide-out-l 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.4s both
+// .flip-enter .transition-elem-1,
+// .flip-enter-active .transition-elem-1
+//   animation: slide-in-l 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+// .flip-leave .transition-elem-1,
+// .flip-leave-active .transition-elem-1
+//   animation: slide-out-l 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.4s both
 
-.flip-enter .transition-elem-2,
-.flip-enter-active .transition-elem-2
-  animation: slide-in-l 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both
-.flip-leave .transition-elem-2,
-.flip-leave-active .transition-elem-2
-  animation: slide-out-l 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s both
+// .flip-enter .transition-elem-2,
+// .flip-enter-active .transition-elem-2
+//   animation: slide-in-l 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both
+// .flip-leave .transition-elem-2,
+// .flip-leave-active .transition-elem-2
+//   animation: slide-out-l 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.2s both
 
-.flip-enter .transition-elem-3,
-.flip-enter-active .transition-elem-3
-  animation: slide-in-l 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both
-.flip-leave .transition-elem-3,
-.flip-leave-active .transition-elem-3
-  animation: slide-out-l 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+// .flip-enter .transition-elem-3,
+// .flip-enter-active .transition-elem-3
+//   animation: slide-in-l 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both
+// .flip-leave .transition-elem-3,
+// .flip-leave-active .transition-elem-3
+//   animation: slide-out-l 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
 
 @keyframes flip-out-ver-left
   0%

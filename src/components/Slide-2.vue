@@ -21,8 +21,9 @@ export default {
 </script>
 
 <style lang="sass">
-.slide-2
-  width: 100vw
-  height: 100vh
-  background-color: yellow
+// .slide-2
+//   position: relative
+//   width: 100vw
+//   height: 100vh
+//   background-color: yellow
 </style>

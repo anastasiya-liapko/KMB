@@ -3,9 +3,9 @@
     <app-slick
       ref="slick"
       :options="slickOptions">
-        <app-slide-1></app-slide-1>
-        <app-slide-2></app-slide-2>
-        <app-slide-3></app-slide-3>
+        <app-slide-1 class="slide"></app-slide-1>
+        <app-slide-2 class="slide"></app-slide-2>
+        <app-slide-3 class="slide"></app-slide-3>
     </app-slick>
   </div>
 </template>
@@ -122,5 +122,11 @@ export default {
 .slider
   width: 100vw
   height: 100vh
-  background-color: red
+
+.slide
+  position: relative
+  position: relative
+  width: 100vw
+  height: 100vh
+  background-color: #ffffff
 </style>

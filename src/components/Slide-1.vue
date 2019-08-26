@@ -1,18 +1,18 @@
 <template>
   <div class="slide-1">
-    <div class="slide-1__wrapper">
+    <div class="content slide-1__content">
       <div class="slide-1__content content">
         <button @click="switchFlip">Войти</button>
       </div>
-
-      <transition name="slide-bl" appear>
-        <div class="rect-gray"></div>
-      </transition>
-
-      <transition name="slide-br" appear>
-        <div class="triangle triangle-bottom"></div>
-      </transition>
     </div>
+
+    <transition name="slide-bl" appear>
+      <div class="rect-gray"></div>
+    </transition>
+
+    <transition name="slide-br" appear>
+      <div class="triangle triangle-bottom"></div>
+    </transition>
   </div>
 </template>
 
@@ -32,18 +32,13 @@ export default {
 
 <style lang="sass">
 .slide-1
-  position: relative
-  width: 100vw
-  height: 100vh
-  background-color: pink
+  // position: relative
+  // width: 100vw
+  // height: 100vh
+  // background-color: #ffffff
   button
     width: 200px
     height: 50px
     color: white
     background-color: blue
-
-.slide-1__wrapper
-  position: relative
-  width: inherit
-  height: inherit
 </style>

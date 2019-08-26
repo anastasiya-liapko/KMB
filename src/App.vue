@@ -46,6 +46,39 @@ body
   height: inherit
   background-color: transparent
 
+.kmb-title
+  margin: 0
+  font-family: inherit
+  font-size: 64px
+  font-weight: 700
+  line-height: 1
+  letter-spacing: -2.29px
+  color: #000000
+
+.kmb-input
+  width: 100%
+  height: 63px
+  border: none
+  border-bottom: 2px solid #d2d2d2
+
+.kmb-button
+  display: flex
+  flex-wrap: nowrap
+  align-items: center
+  justify-content: center
+  width: 193px
+  height: 50px
+  border: none
+  border-radius: 40px
+  background-image: linear-gradient(207deg, #6caac4, #3a7191)
+
+.kmb-button__text
+  font-family: inherit
+  font-size: 14px
+  font-weight: 400
+  line-height: 1
+  color: #ffffff
+
 .triangle
   z-index: 100
   position: absolute
@@ -72,7 +105,7 @@ body
   width: 70%
   height: 100%
   background-size: cover
-  background-position: center
+  background-position: top
   background-repeat: no-repeat
   background-image: url('assets/img/rect-gray.svg')
 
@@ -83,8 +116,8 @@ body
   top: 0
   width: 65%
   height: 100%
-  background-size: cover
-  background-position: center
+  background-size: contain
+  background-position: top
   background-repeat: no-repeat
   background-image: url('assets/img/triangle-gray.svg')
 
